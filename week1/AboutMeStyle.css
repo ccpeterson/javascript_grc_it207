@@ -1,0 +1,17 @@
+/*
+
+
+*/
+
+body {
+	background-color: gray;
+
+}
+
+header {
+	font-family: sans-serif;
+  font-style: italic;
+}
+ul {
+  list-style-type: square;
+}
