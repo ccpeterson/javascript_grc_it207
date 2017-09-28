@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+Author : Clinton Peterson
+Date: 27 Sep 2017
+
+Filename: teashop.html
+
+-->
+	<meta charset="UTF-8" />
+	<meta name = "author" content = "Clinton Peterson"/>
+	<title>Tea Shop</title>
+	<link href="teashop_layout.css" rel="stylesheet" type="text/css"  />
+	<link href="teashop_styles.css" rel="stylesheet" type="text/css"  />
+	<base target="_self" />
+</head>
+<body>
+	<header>
+		<h1>Tea Shop</h1>
+		<nav>
+			<ul>
+				<li><a href = "teashop.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1 id="about">Tea Shop</h1>
+
+	<p id="orderOutput"></p>
+	<img src="tea.jpg">
+	<script>
+		var name = prompt("What is your name?")
+		var cups = prompt("How many cups would you like?");
+		const tax = 1.09;
+		const pricePerCup = 2.5
+		var totalPrice = cups * pricePerCup * tax;
+		totalPrice = totalPrice.toFixed(2);
+		var userOrder = name + " you ordered " + cups + " cups of tea. Your total with tax is $" + totalPrice + ".";
+		document.getElementById("orderOutput").innerHTML = userOrder;
+	</script>
+
+
+
+	<footer>
+	<a href = "http://www.kentnerd.com" rel = "external"><h4>KentNerd.com</h4></a>
+	<a href = "mailto:cpeterson52@mail.greenriver.edu?subject=Sup" title = "Send Message">Contact me</a>
+	</footer>
+</body>
+</html>
