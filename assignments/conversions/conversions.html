@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <!--
-
 Author : Clinton Peterson
-Date:
-
+Date : 7 Oct 2017
+Filename : conversions.html
+Assignment : conversions
+Related files : conversions.js
 -->
 <html>
 <head>
@@ -16,18 +16,17 @@ Date:
 	<header>
 		<h1>Conversions</h1>
 	</header>
-	<section>
 	<p>Click a button to do a thing</p>
-	</section>
-  <button id="1">1 - Greeting</button><br>
-  <button id="2">2 - Personal Greeting</button><br>
-  <button id="3">3 - Convert C to F</button><br>
-  <button id="4">4 - Convert F to C</button><br>
-  <button id="5">5 - Convert Weight</button><br>
-  <button id="6">6 - Convert Height</button><br>
-  <button id="7">7 - Calculate Square</button><br>
-  <button id="8">8 - Calculate BMI</button><br>
-	<footer>
-	</footer>
+	<form>
+		<input type="button" onclick="greeting()" value="Greeting"/><br>
+		<input type="button" onclick="personalGreeting()" value="Personal Greeting"/><br>
+		<input type="button" onclick="convertCF()" value="Convert a temperature from C to F"/><br>
+		<input type="button" onclick="convertFC()" value="Convert a temperature from F to C"/><br>
+		<input type="button" onclick="convertWeight()" value="Convert weight from lbs to kg"/><br>
+		<input type="button" onclick="convertHeight()" value="Convert height from inches to cm"/><br>
+		<input type="button" onclick="square()" value="Find the square of a number"/><br>
+		<input type="button" onclick="calcBMI()" value="Calculate your BMI"/><br>
+	</form>
+	<script src="conversions.js"></script>
 </body>
 </html>
