@@ -1,81 +1,62 @@
-<!-- Kevin Santos (Interactive Bio) -->
 <!DOCTYPE html>
-<html lang="en">
+<!--
 
+Author: Clinton Peterson
+Project: Interactive Bio
+Date: 27 November 2017
+
+-->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Interactive Bio</title>
-    <link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Interactive Bio</title>
+  <link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<!-- Start of tabbed menu -->
 <div id="tabs">
-
-    <!-- Start of tabs titles -->
-    <ul>
-        <li><a href="#tabs-info">Info</a></li>
-        <li><a href="#tabs-foods">Foods</a></li>
-        <li><a href="#tabs-profile-picture">Profile Picture</a></li>
-        <li><a href="#tabs-bio">Bio</a></li>
-        <li><a href="#tabs-skills-list">Skills List</a></li>
-    </ul>
-    <!-- End of tabs titles -->
-
-    <!-- Start of tabs-info -->
-    <div id="tabs-info">
-        <h4>Let's learn more about you!</h4>
-        <p> Dream Job:
-            <input id="dream-job-text" type="text">
-            <button id="dream-job-button">...</button>
-        </p>
-        <p> Date: <input id="date-text" type="text"> </p>
-
-        <!-- This is the content of the dialog box -->
-        <div id="dialog" title="Dream Job">
-            <p>Follow your dreams</p>
-        </div>
-        <!-- End of dialog box -->
+  <ul>
+    <li><a href="#tabs-info">Info</a></li>
+    <li><a href="#tabs-foods">Foods</a></li>
+    <li><a href="#tabs-profile-picture">Profile Picture</a></li>
+    <li><a href="#tabs-bio">Bio</a></li>
+    <li><a href="#tabs-skills-list">Skills List</a></li>
+  </ul>
+  <div id="tabs-info">
+    <h4>Let's learn more about you!</h4>
+    <p>Dream Job:
+      <input id="dream-job-text" type="text">
+      <button id="dream-job-button">...</button>
+    </p>
+    <p>Date:
+      <input id="date-text" type="text">
+    </p>
+    <div id="dialog" title="Dream Job">
+      <p>Follow your dreams</p>
     </div>
-    <!-- End of tabs-info -->
-
-    <!-- Start of tabs-foods -->
-    <div id="tabs-foods">
-        <img id="droppable" src="images/fridge-closed.png">
-        <img class="draggable" src="images/green-apple.png">
-        <img class="draggable" src="images/red-apple.png">
-        <img class="draggable" src="images/banana.png">
-    </div>
-    <!-- End of tabs-foods -->
-
-    <!-- Start of tabs-profile-picture -->
-    <div id="tabs-profile-picture">
-        <img id="profile-picture" src="images/Asta.png" title="Want a bigger picture? Just drag to resize!">
-    </div>
-    <!-- End of tabs-profile-picture -->
-
-    <!-- Start of tabs-bio -->
-    <div id="tabs-bio">
-        <button id="bio-button">Show me a bio</button>
-        <div id="fileDisplayArea"></div>
-    </div>
-    <!-- End of tabs-bio -->
-
-    <!-- Start of tabs-skills-list -->
-    <div id="tabs-skills-list">
-        <div id="skills-list-content"></div>
-    </div>
-    <!-- End of tabs-skills-list -->
-
+  </div>
+  <div id="tabs-foods">
+    <img id="droppable" src="images/fridge-closed.png">
+    <img class="draggable" src="images/burger.png">
+    <img class="draggable" src="images/chicken.png">
+    <img class="draggable" src="images/banana.png">
+  </div>
+  <div id="tabs-profile-picture">
+    <img id="profile-picture" src="images/clint.jpg" title="Want a bigger picture? Just drag to resize!">
+  </div>
+  <div id="tabs-bio">
+    <button id="bio-button">Show me a bio</button>
+    <div id="fileDisplayArea"></div>
+  </div>
+  <div id="tabs-skills-list">
+    <div id="skills-list-content"></div>
+  </div>
 </div>
-<!-- End of tabbed menu -->
 
 <!-- Scripts -->
 <script src="scripts/jquery-3.2.1.js"></script>
 <script src="scripts/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 <script src="scripts/bio.js"></script>
-<!-- End of Scripts -->
 
 </body>
 </html>

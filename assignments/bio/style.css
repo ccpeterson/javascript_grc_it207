@@ -1,12 +1,6 @@
 /* This pre-sets the size of the profile picture */
 #profile-picture {
-    width: 331px;
-    height: 496px;
-    padding: 0.5em;
-}
-
-/* Spaces the fileDisplayArea */
-#fileDisplayArea {
-    margin: 0.5em;
+    width: 350px;
+    height: 500px;
     padding: 0.5em;
 }
